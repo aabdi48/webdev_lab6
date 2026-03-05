@@ -1,182 +1,122 @@
 body {
   background-image: url("../images/black.jpg");
-  background-repeat: repeat;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #page-wrapper {
   width: 960px;
-  margin: 30px auto;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1); 
+  border-radius: 12px 12px 0px 0px; 
 }
 
 #header {
   position: relative;
-  background-image: url("../images/black.jpg");
-  background-repeat: repeat;
-  height: 110px;
-  overflow: hidden;
-}
-
-#logo1 img {
-  display: block;
-  margin: 10px 0 0 10px;
-  width: 420px; /
-  height: auto;
+  margin-top: 40px;
+  border-radius: 12px 12px 0px 0px; 
 }
 
 #header h1 {
   position: absolute;
-  top: 22px;
-  left: 450px;
-  margin: 0;
-  font-family: "Devonshire", cursive;
-  font-size: 54px;
-  color: #e35335;
-  letter-spacing: 1px;
+  left: 420px;
+  top:5px;
+  font-size: 3em;
+  font-family: 'Devonshire', cursive;
+  color: #E35335;
 }
 
-#main-nav {
-  background: #333;
-  width: 100%;
+#header a#logo1 img {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-#main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-#main-nav li {
-  display: inline-block;
-}
-
-#main-nav a {
-  display: inline-block;
-  padding: 10px 22px;
-  color: #ccc;
+#header #toplink {
   text-decoration: none;
-  font-size: 14px;
-}
-
-#main-nav a:hover {
-  background: #ccc;
-  color: #333;
-}
-
-
-#content-wrapper {
-  background-image: url("../images/repeating.png");
-  background-repeat: repeat;
-  overflow: hidden; /
-  padding: 15px 0 25px 0;
-}
-
-#main-content {
-  float: left;
-  width: 700px;
-  margin-left: 15px;
-}
-
-#side-content {
-  float: right;
-  width: 210px;
-  margin-right: 15px;
-  padding-top: 10px;
-}
-
-
-#main-content h2 {
-  margin: 0 0 10px 0;
-}
-
-#main-content h2 strong {
-  font-size: 56px;
-  font-weight: 900;
-  color: #000;
-}
-
-
-.image-r {
-  float: right;
-  width: 300px;
-  padding: 6px;
-  margin: 10px 10px 20px 15px;
-  background: #fff;
-  border: 2px solid blue;
-}
-
-/* Paragraphs */
-#main-content p {
-  margin: 0 0 14px 0;
-  line-height: 1.35;
-  font-size: 14px;
-}
-
-/* Bullets */
-#bul1,
-#bul2 {
-  margin: 0 0 14px 22px;
-  padding: 0;
-}
-
-#bul1 li,
-#bul2 li {
-  margin: 4px 0;
-}
-
-
-#center {
-  width: 100%;
-  text-align: center;
-  margin-top: 15px;
-}
-
-#center iframe {
-  border: 0;
-}
-
-
-#side-content h3 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: right;
-}
-
-#news {
-  margin: 0;
-  padding-left: 18px;
-}
-
-#news li {
-  margin: 12px 0;
-}
-
-#news a {
-  color: #1a5fb4;
-  text-decoration: underline;
-}
-
-#news div p {
-  margin: 6px 0 0 0;
-  font-size: 12px;
-  color: #333;
+  position: absolute;
+  top:-34px;
+  right: 10px;
+  color: white;
+  font-size: 1.8em;
 }
 
 #footer {
-  background: #777;
-  color: #000;
-  padding: 10px 15px;
-  height: 50px;
-  line-height: 30px;
+  background-color: #777;
+  height: 80px;
   clear: both;
 }
 
-#footer p {
+#content-wrapper {
+  background-image: url("../images/repeating.png");
+  float: left;
+}
+
+#main-content {
+  min-height: 300px;
+  width: 715px;
+  margin-right: 30px;
+  float: left;
+  margin-left: 15px;
+}
+
+h2 strong {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.image-r {
+  float: right;
+  border: 2px solid blue;
+  width: 300px;
+  padding: 5px;
+  background-color: white;
+  margin: 10px 0 10px 20px;
+}
+
+#side-content {
+  min-height: 150px;
+  width: 200px;
+  float: left;
+}
+
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #333;
+}
+
+#main-nav ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left:50%;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+#main-nav ul li a {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#main-nav ul li a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+#center {
+  width: 960px;
+  text-align: center;
+}
+
+strong {
+  font-weight: 900;
+  font-size: 48px;
 }
